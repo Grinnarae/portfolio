@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Formula1-Display-Regular';
+  src: url('Formula1-Display-Regular.svg#Formula1-Display-Regular') format('svg'),
+       url('Formula1-Display-Regular.ttf') format('truetype'),
+       url('Formula1-Display-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Regular';
+  src: url('Formula1-Regular.eot');
+  src: url('Formula1-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Formula1-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

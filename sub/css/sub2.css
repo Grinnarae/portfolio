@@ -1,0 +1,1471 @@
+@charset "utf-8";
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Formula1-Display-Regular', 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    /*overflow: hidden;*/
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    width: 100px;
+    height: 100%;
+    background-color: #15151e;
+    position: fixed;
+    z-index: 999;
+}
+
+header .tab {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .tab img {
+    width: 100%;
+    height: 100%;
+}
+
+header .close {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+header .close img {
+    width: 100%;
+    height: 100%;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .fialogo {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav {
+    /*display: none;*/
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 1320px;
+    left: -1320px;
+}
+
+nav a {
+    color: #333;
+    font-weight: 900;
+}
+
+.menu > li > a.menu-act {
+    color: #ff1e00;
+}
+
+.menu-bg {
+    position: absolute;
+    /*top: 0;*/
+    top: 0%;
+    /*left: 0;*/
+    /*left: -100%;*/
+    width: 665px;
+    height: 969px;
+    background-color: #fff;
+    background-image: url(../images/menu/menubg1.png);
+    background-size: cover;
+    display: none;
+}
+
+.menu-logo {
+    position: absolute;
+    top: 60px;
+    /*left: 35px;*/
+    left: -100%;
+    transition: all .5s;
+}
+
+header nav ul {
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Formula1-Black', 'Noto Sans KR', sans-serif;
+    font-style: italic;
+}
+
+.menu {
+    /*line-height: 80px;*/
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*opacity: 0;*/
+}
+
+.menu > li {
+    opacity: 0;
+    margin: 70px 0;
+    margin-left: -500px;
+}
+
+.smenu {
+    top: 50%;
+    transform: translateY(-50%);
+    /*left: 500px;*/
+    left: 200px;
+    width: 300px;
+    opacity: 0;
+}
+
+.smenu > li {
+    margin: 40px 0;
+}
+
+.smenu > li a {
+    font-weight: 600;
+    font-size: 46px;
+}
+
+
+.wrap {
+    /*position: absolute;
+    right: 0;
+    top: 0;*/
+    width: 100%;
+    padding-left: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.subtop {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+    background-image: url(../images/f1/top.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    position: relative;
+}
+
+.f1logo-line {
+    background-image: url(../images/f1/f1top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 88px;
+    left: 3.296703296703297%;
+    /*width: 1510px;*/
+    height: 78.83333333333333%;
+    width: 83.84%;
+    /*height: 473px;*/
+}
+
+/*.subtop p {
+    position: absolute;
+    top: 260px;
+    right: 17.58241758241758%;
+    font-size: 120px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -5px;
+}*/
+
+.subtoptext {
+    background-image: url(../images/f1/f1top.png);
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1510px;
+    height: 473px;
+}
+
+.subtop p {
+    color: #fff;
+    font-size: 120px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -5px;
+    padding: 0 30px;
+    line-height: 80px;
+    margin-top: 170px;
+    margin-left: 1200px;
+}
+
+.submenu {
+    width: 100%;
+    height: 100px;
+    background-color: #15151e;
+    background-image: url(../images/f1/menubg.png);
+    background-size: cover;
+    line-height: 100px;
+    text-align: center;
+}
+
+.submenu div {
+    width: 50%;
+    float: left;
+}
+
+.submenu a {
+    font-size: 46px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.submenu a:hover {
+    color: #ff1e00;
+}
+
+.currentpage {
+    color: #ff1e00 !important;
+}
+
+
+.content-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-wrap .sub-title {
+    font-size: 72px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin: 100px auto;
+    font-size: 27.5px;
+    width: 1320px;
+}
+
+.sub-title h2 {
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+    width: 16.66666666666667%;
+    float: left;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sub-title h2:hover {
+    color: #ff1e00;
+}
+
+.sub-title-act {
+    color: #ff1e00;
+}
+
+
+.content {
+    width: 100%;
+}
+
+.mainimg p {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 265px;
+    font-family: 'Formula1-Display-Bold';
+}
+
+
+.Y1950 .mainimg p {
+    background-image: linear-gradient(to right, #fff 80%, #ccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 1000%;
+    background-position: left;
+    animation: gradient-animation 5s infinite alternate;
+}
+
+.Y1960 .mainimg p {
+    background: linear-gradient(45deg, #fff, #999, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: left;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+.Y1970 .mainimg p {
+    background: linear-gradient(45deg, #fbf232, #1a3777, #fbf232);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: left;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+.Y1980 .mainimg p {
+    background: linear-gradient(45deg, #fff, #1c3479, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: left;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+.Y1990 .mainimg p {
+    background: linear-gradient(45deg, #f1f2f4, #424360, #f1f2f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: left;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+.Y2000 .mainimg p {
+    background: linear-gradient(45deg, #4c3b92, #ed3b4b, #4c3b92);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: left;
+    animation: gradient-animation 10s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+
+/*----------------------1950----------------------*/
+
+.Y1950 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/1950s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+/*farina*/
+.farina {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.farina .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.farina .lineimg img {
+    display: block;
+}
+
+.farina h3 {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.farina p {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: 23px;
+}
+
+.farina .farinaimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.farina .farinaimg img {
+    display: block;
+}
+
+/*farina*/
+
+
+
+/*fangio*/
+.fangio {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 260px;
+}
+
+.fangio .fangioimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fangio .fangioimg img {
+    display: block;
+}
+
+.fangio h3 {
+    position: absolute;
+    right: 175px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.fangio p {
+    position: absolute;
+    font-size: 23px;
+    top: 66px;
+    right: 55px;
+}
+
+.fangio .lineimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fangio .lineimg img {
+    display: block;
+}
+
+/*fangio*/
+
+
+/*moss*/
+/*.moss {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-bottom: 245px;
+}
+
+.moss .mossimg {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 245px;
+}
+
+.moss .mossimg img {
+    display: block;
+}
+
+.moss .mossleftimg {
+    position: absolute;
+    left: 0;
+    top: 245px;
+    z-index: 5;
+}
+
+.moss .mossleftimg img {
+    display: block;
+}
+
+.moss .lineimg {
+    position: absolute;
+    width: 1320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.moss h3 {
+    position: absolute;
+    top: 0;
+    left: 245px;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.moss h2 {
+    position: absolute;
+    top: 300px;
+    right: 360px;
+    font-size: 76px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.moss p {
+    position: absolute;
+    top: 127px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+}*/
+
+/*moss*/
+
+/*moss*/
+
+.moss {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-bottom: 245px;
+}
+
+.mossimg {
+    width: 100%;
+    position: absolute;
+}
+
+.mossimg img {
+    display: block;
+    width: 100%;
+}
+
+.moss h3 {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.moss h2 {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    font-size: 76px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.moss p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+}
+
+/*moss*/
+
+
+
+/*manufacture*/
+.manufacture {
+    text-align: center;
+    margin-bottom: 242px;
+}
+
+.manufacture p {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.manufactureimg {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.manufactureimg a {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.manufactureimg img {
+    transition: all .2s;
+}
+
+.manufactureimg img:hover {
+    transform: scale(1.1);
+}
+
+/*manufacture*/
+
+
+/*alfa158*/
+.alfa158 {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.alfa158 .alfa158img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.alfa158 .alfa158img img {
+    display: block;
+}
+
+.alfa158 h3 {
+    position: absolute;
+    right: 340px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.alfa158 p {
+    position: absolute;
+    font-size: 23px;
+    top: 66px;
+    right: 55px;
+}
+
+.alfa158 .lineimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.alfa158 .lineimg img {
+    display: block;
+}
+
+/*alfa158*/
+
+
+/*w196*/
+.w196 {
+    width: 1320px;
+    height: 402px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 255px;
+}
+
+.w196 .lineimg1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.w196 .lineimg1 img {
+    display: block;
+}
+
+.w196 h3 {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.w196 .toptxt {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: 23px;
+}
+
+.w196 .w196img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.w196 .w196img img {
+    display: block;
+}
+
+.w196 .lineimg2 {
+    position: absolute;
+    top: 320px;
+    right: 0;
+}
+
+.w196 .bottomtxt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 23px;
+}
+
+/*w196*/
+
+
+/*brit-green*/
+
+.brit-green {
+    width: 100%;
+    height: 996px;
+    position: relative;
+    margin-bottom: 170px;
+}
+
+.brit-green .britimg {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 125px;
+    background-color: #162f29;
+    z-index: 3;
+}
+
+.brit-green .britimg img {
+    display: block;
+    margin-left: -17px;
+}
+
+.brit-green .britrightimg {
+    position: absolute;
+
+    right: 0;
+    top: 125px;
+    z-index: 5;
+}
+
+.brit-green .britrightimg img {
+    display: block;
+}
+
+.brit-green .lineimg {
+    position: absolute;
+    width: 1320px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.brit-green p {
+    position: absolute;
+    left: 50%;
+    top: 700px;
+    transform: translateX(-50%);
+    font-size: 23px;
+}
+
+.brit-green h3 {
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+/*brit-green*/
+
+/*----------------------1950----------------------*/
+
+
+
+
+/*----------------------1960----------------------*/
+
+.Y1960 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/1960s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+/*bugatti*/
+.bugatti {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.bugatti .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bugatti .lineimg img {
+    display: block;
+}
+
+.bugatti h3 {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.bugatti p {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: 23px;
+}
+
+.bugatti .bugattiimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bugatti .bugattiimg img {
+    display: block;
+}
+
+/*bugatti*/
+
+
+
+/*ferguson*/
+.ferguson {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.ferguson .fergusonimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ferguson .fergusonimg img {
+    display: block;
+}
+
+.ferguson h3 {
+    position: absolute;
+    right: 435px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.ferguson p {
+    position: absolute;
+    font-size: 23px;
+    top: 66px;
+    right: 150px;
+}
+
+.ferguson .lineimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ferguson .lineimg img {
+    display: block;
+}
+
+/*ferguson*/
+
+/*lovetingle*/
+.lovetingle {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.lovetingle .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lovetingle .lineimg img {
+    display: block;
+}
+
+.lovetingle h3 {
+    position: absolute;
+    left: 550px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.lovetingle p {
+    position: absolute;
+    top: 80px;
+    left: 48px;
+    font-size: 23px;
+}
+
+.lovetingle .lovetingleimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.lovetingle .lovetingleimg img {
+    display: block;
+}
+
+/*lovetingle*/
+
+/*----------------------1960----------------------*/
+
+
+
+/*----------------------1970----------------------*/
+
+.Y1970 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/1970s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+.ecclestone {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-bottom: 245px;
+}
+
+.ecclestone .ecclestoneimg {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 265px;
+    background-color: #15151e;
+}
+
+.ecclestone .ecclestoneimg img {
+    display: block;
+}
+
+.ecclestone .ecclestoneleftimg {
+    position: absolute;
+    left: 0;
+    top: 265px;
+    z-index: 5;
+}
+
+.ecclestone .ecclestoneleftimg img {
+    display: block;
+}
+
+.ecclestone .lineimg {
+    position: absolute;
+    width: 1320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ecclestone h3 {
+    position: absolute;
+    top: 0;
+    left: 245px;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.ecclestone h2 {
+    position: absolute;
+    top: 320px;
+    right: 360px;
+    font-size: 76px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 6;
+}
+
+.ecclestone p {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+}
+
+/*----------------------1970----------------------*/
+
+
+/*----------------------1980----------------------*/
+
+.Y1980 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/1980s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+/*turbo*/
+.turbo {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.turbo .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.turbo .lineimg img {
+    display: block;
+}
+
+.turbo h3 {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.turbo p {
+    position: absolute;
+    top: 60px;
+    left: 48px;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+}
+
+.turbo .turboimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.turbo .turboimg img {
+    display: block;
+}
+
+/*turbo*/
+
+
+/*lotus*/
+.lotus {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.lotus .lotusimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lotus .lotusimg img {
+    display: block;
+}
+
+.lotus h3 {
+    position: absolute;
+    right: 435px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.lotus p {
+    position: absolute;
+    font-size: 23px;
+    top: 66px;
+    right: 50px;
+}
+
+.lotus .lineimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.lotus .lineimg img {
+    display: block;
+}
+
+/*lotus*/
+
+
+/*----------------------1980----------------------*/
+
+
+
+/*----------------------1990----------------------*/
+.Y1990 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/1990s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+/*senna*/
+.senna {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.senna .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.senna .lineimg img {
+    display: block;
+}
+
+.senna h3 {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.senna p {
+    position: absolute;
+    top: 60px;
+    left: 48px;
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+
+.senna .sennaimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.senna .sennaimg img {
+    display: block;
+}
+
+/*senna*/
+
+
+/*narrow*/
+.narrow {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.narrow .narrowimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.narrow .narrowimg img {
+    display: block;
+}
+
+.narrow h3 {
+    position: absolute;
+    right: 375px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.narrow p {
+    position: absolute;
+    font-size: 23px;
+    top: 66px;
+    right: 50px;
+}
+
+.narrow .lineimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.narrow .lineimg img {
+    display: block;
+}
+
+/*narrow*/
+
+
+/*----------------------1990----------------------*/
+
+
+
+/*----------------------2000----------------------*/
+.Y2000 .mainimg {
+    width: 100%;
+    height: 631px;
+    background-image: url(../images/history/2000s/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+
+/*senna*/
+.schumacher {
+    width: 1320px;
+    height: 261px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.schumacher .lineimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.schumacher .lineimg img {
+    display: block;
+}
+
+.schumacher h3 {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Formula1-Display-Bold';
+    font-style: italic;
+}
+
+.schumacher p {
+    position: absolute;
+    top: 60px;
+    left: 48px;
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+
+.schumacher .schumacherimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.schumacher .schumacherimg img {
+    display: block;
+}
+
+/*senna*/
+/*----------------------2000----------------------*/
+
+
+
+
+.year {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+    width: 100%;
+    background-color: #15151e;
+    padding-bottom: 50px;
+}
+
+.spon-title {
+    text-align: center;
+    padding-top: 60px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.sponsor {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.spon1 {
+    width: 100%;
+    height: 105px;
+}
+
+.spon1 a {
+    display: block;
+    width: 12%;
+    height: 100%;
+    float: left;
+    margin-right: 2.66666666%;
+    position: relative;
+}
+
+.spon1 a:last-child {
+    margin-right: 0;
+}
+
+.spon1 a img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: all .2s;
+}
+
+.spon1 a:hover img {
+    transform: scale(1.2);
+}
+
+.spon2 {
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+}
+
+.spon2 a {
+    display: block;
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.spon2 a img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s;
+}
+
+.spon2 a:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+
+}
+
+.footer-bottom {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.footer-bottom .footer-logo {
+    float: left;
+}
+
+.footer-bottom .copyright {
+    float: right;
+    color: #fff;
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.copyright a {
+    color: #fff;
+}

@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>F1</title>
+
+    <!--fonts-->
+    <link rel="stylesheet" href="font/regular1/font.css">
+    <link rel="stylesheet" href="font/regular2/font.css">
+    <link rel="stylesheet" href="font/bold1/font.css">
+    <link rel="stylesheet" href="font/bold2/font.css">
+    <link rel="stylesheet" href="font/wide1/font.css">
+    <link rel="stylesheet" href="font/wide2/font.css">
+    <link rel="stylesheet" href="font/black/font.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--<script src="js/jquery-1.12.3.js"></script>-->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <!--<script src="js/jquery-ui.min.js"></script>-->
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/jquery-touch-punch.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="tab"><a href="#"><img src="images/menu_tab.png" alt=""></a></div>
+        <div class="close"><a href="#"><img src="images/cancel.png" alt=""></a></div>
+
+        <h1 class="logo"><a href="index.html"><img src="images/F1logo.png" alt="F1"></a></h1>
+
+        <div class="fialogo"><a href="#"><img src="images/FIAlogo.png" alt="FIA"></a></div>
+
+        <nav>
+            <div class="menu-bg"></div>
+            <div class="menu-logo"><img src="images/menu/menu-logo.png" alt=""></div>
+            <ul class="menu">
+                <li>
+                    <a href="#">F1</a>
+                    <ul class="smenu">
+                        <li><a href="sub/sub-f1-intro.html">소개</a></li>
+                        <li><a href="sub/sub-f1-history.html">역사</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">정보</a>
+                    <ul class="smenu">
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">용어</a></li>
+                        <li><a href="#">규정</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">순위</a>
+                    <ul class="smenu">
+                        <li><a href="#">시즌</a></li>
+                        <li><a href="#">팀</a></li>
+                        <li><a href="#">드라이버</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">트랙</a>
+                    <ul class="smenu">
+                        <li><a href="sub/sub-track-individual.html">이전경기</a></li>
+                        <li><a href="#">다음경기</a></li>
+                        <li><a href="#">전체경기</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">드라이버</a>
+                </li>
+
+                <li>
+                    <a href="sub/sub-team.html">팀</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="wrap">
+        <section class="sec1 sec">
+            <!--<video src="video/video1.mp4" autoplay loop muted></video>-->
+
+            <!--실무에서는 비디오 태그를 아래와 같이 사용해요~-->
+            <video autoplay loop muted>
+                <source type="video/mp4" src="video/video1.mp4">
+            </video>
+        </section>
+
+
+
+        <section class="sec2 sec clearfix">
+            <div class="motor">
+                <div class="line1"></div>
+                <a href="sub/sub.html"><img class="backF1" src="images/f1.png" alt=""></a>
+                <!--p태그 위치를 각각 잡아줘야할텐데 클래스 부여해서 사용하세요-->
+                <p class="bestmotor">세계 최고의<br>모터스포츠</p>
+                <p class="formula1">Formula 1</p>
+                <div class="motor-content">
+                    <p class="content1">"레이싱 드라이버들에게<br>가장 영광스럽고 도전적인 모터스포츠 대회"</p>
+                    <p class="content2">"가장 대중적이고 성공적으로 알려진 모터스포츠"</p>
+                </div>
+
+            </div>
+
+            <div class="TeamDriver">
+                <div class="topbtn clearfix">
+                    <!--클래스로 구분해서 사용하세요-->
+                    <div class="team-btn tabact">
+                        <div class="team-btn-txt">팀</div>
+                        <div class="team-btn-back"></div>
+                    </div>
+                    <div class="driver-btn">
+                        <div class="driver-btn-txt">드라이버</div>
+                        <div class="driver-btn-back"></div>
+                    </div>
+                </div>
+
+
+                <div class="team-movebtn">
+                    <div class="team-left"><img src="images/team/left.png" alt="왼쪽버튼"></div>
+                    <div class="team-right"><img src="images/team/right.png" alt="오른쪽버튼"></div>
+                </div>
+                
+                <div class="driver-movebtn">
+                    <div class="driver-left"><img src="images/team/left.png" alt="왼쪽버튼"></div>
+                    <div class="driver-right"><img src="images/team/right.png" alt="오른쪽버튼"></div>
+                </div>
+
+                <div class="slide">
+                    <!--팀-->
+                    <div class="teams">
+                        <div class="alfa team">
+                            <img src="images/team/alfa.png" alt="알파로메오 레이싱">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Alfa romeo Racing</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">9th</p>
+                                    <p class="tpoint">3PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alpha team">
+                            <img src="images/team/alpha.png" alt="알파타우리 혼다">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Alpha Tauri</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">6th</p>
+                                    <p class="tpoint">68PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alpine team">
+                            <img src="images/team/alpine.png" alt="알피느">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Alpine</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">5th</p>
+                                    <p class="tpoint">77PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aston team">
+                            <img src="images/team/aston.png" alt="애스턴마틴">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Aston Martin</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">7th</p>
+                                    <p class="tpoint">37PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ferrari team">
+                            <img src="images/team/ferrari.png" alt="페라리">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Ferrari</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">3rd</p>
+                                    <p class="tpoint">163PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="haas team">
+                            <img src="images/team/haas.png" alt="하스">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Haas F1 Team</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">10th</p>
+                                    <p class="tpoint">0PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mclaren team">
+                            <img src="images/team/mclaren.png" alt="맥라렌">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Mclaren</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">4th</p>
+                                    <p class="tpoint">163PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mercedes team">
+                            <img src="images/team/benz.png" alt="메르세데스 벤츠">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Mercedes</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">1st</p>
+                                    <p class="tpoint">303PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="redbull team">
+                            <img src="images/team/redbull.png" alt="레드불 레이싱">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">RedBull Racing</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">2nd</p>
+                                    <p class="tpoint">291PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="williams team">
+                            <img src="images/team/williams.png" alt="윌리엄스">
+
+                            <div class="teamtxt">
+                                <p class="teamname"><a href="#">Williams</a></p>
+                                <div class="txtbottom">
+                                    <p class="tpos">8th</p>
+                                    <p class="tpoint">10PTS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!--드라이버-->
+                    <div class="drivers">
+                        <div class="raikkonen driver">
+                            <img src="images/driver/raikonen.png" alt="키미 라이코넨">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/finland.png" alt="핀란드">
+                                    <img src="images/driver/num/raikkonen.png" alt="7">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">키미 라이코넨</a></p>
+                                    <p class="dpos">17th</p>
+                                    <p class="dpoint">2PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="giobinazzi driver">
+                            <img src="images/driver/giobinazzi.png" alt="지오비나치">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/italy.png" alt="이탈리아">
+                                    <img src="images/driver/num/giobinazzi.png" alt="99">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">안토니오<br>지오비나치</a></p>
+                                    <p class="dpos">18th</p>
+                                    <p class="dpoint">1PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gasly driver">
+                            <img src="images/driver/gasly.png" alt="피에르 가즐리">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/france.png" alt="프랑스">
+                                    <img src="images/driver/num/gasly.png" alt="10">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">피에르 가즐리</a></p>
+                                    <p class="dpos">8th</p>
+                                    <p class="dpoint">50PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tsunoda driver">
+                            <img src="images/driver/tsunoda.png" alt="유키 츠노다">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/japan.png" alt="일본">
+                                    <img src="images/driver/num/tsunoda.png" alt="22">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">유키 츠노다</a></p>
+                                    <p class="dpos">13th</p>
+                                    <p class="dpoint">18PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ocon driver">
+                            <img src="images/driver/ocon.png" alt="에스테반 오콘">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/france.png" alt="프랑스">
+                                    <img src="images/driver/num/ocon.png" alt="31">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">에스테반 오콘</a></p>
+                                    <p class="dpos">10th</p>
+                                    <p class="dpoint">39PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alonso driver">
+                            <img src="images/driver/alonso.png" alt="페르난도 알론소">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/spain.png" alt="스페인">
+                                    <img src="images/driver/num/alonso.png" alt="14">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">페르난도 알론소</a></p>
+                                    <p class="dpos">11th</p>
+                                    <p class="dpoint">38PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vettel driver">
+                            <img src="images/driver/vettel.png" alt="세바스찬 베텔">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/germany.png" alt="독일">
+                                    <img src="images/driver/num/vettel.png" alt="5">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">세바스찬 베텔</a></p>
+                                    <p class="dpos">12th</p>
+                                    <p class="dpoint">30PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stroll driver">
+                            <img src="images/driver/stroll.png" alt="랜스 스트롤">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/canada.png" alt="캐나다">
+                                    <img src="images/driver/num/stroll.png" alt="18">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">랜스 스트롤</a></p>
+                                    <p class="dpos">14th</p>
+                                    <p class="dpoint">18PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leclerc driver">
+                            <img src="images/driver/leclerc.png" alt="찰스 르클레르">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/monaco.png" alt="모나코">
+                                    <img src="images/driver/num/leclerc.png" alt="16">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">찰스 르클레르</a></p>
+                                    <p class="dpos">7th</p>
+                                    <p class="dpoint">80PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sainz driver">
+                            <img src="images/driver/sainz.png" alt="카를로스 세인즈">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/spain.png" alt="스페인">
+                                    <img src="images/driver/num/sainz.png" alt="55">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">카를로스 세인즈</a></p>
+                                    <p class="dpos">6th</p>
+                                    <p class="dpoint">83PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mazepin driver">
+                            <img src="images/driver/mazepin.png" alt="니키타 마제핀">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/russia.png" alt="러시아">
+                                    <img src="images/driver/num/mazepin.png" alt="9">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">니키타 마제핀</a></p>
+                                    <p class="dpos">20th</p>
+                                    <p class="dpoint">0PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schumacher driver">
+                            <img src="images/driver/schumacher.png" alt="믹 슈마허">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/germany.png" alt="독일">
+                                    <img src="images/driver/num/schumacher.png" alt="47">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">믹 슈마허</a></p>
+                                    <p class="dpos">19th</p>
+                                    <p class="dpoint">0PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="norris driver">
+                            <img src="images/driver/norris.png" alt="랜도 노리스">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/british.png" alt="영국">
+                                    <img src="images/driver/num/norris.png" alt="4">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">랜도 노리스</a></p>
+                                    <p class="dpos">3rd</p>
+                                    <p class="dpoint">113PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ricciardo driver">
+                            <img src="images/driver/ricciardo.png" alt="다니엘 리카르도">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/australia.png" alt="호주">
+                                    <img src="images/driver/num/ricciardo.png" alt="3">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">다니엘 리카르도</a></p>
+                                    <p class="dpos">9th</p>
+                                    <p class="dpoint">50PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hamilton driver">
+                            <img src="images/driver/hamilton.png" alt="루이스 해밀턴">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/british.png" alt="영국">
+                                    <img src="images/driver/num/hamilton.png" alt="44">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">루이스 해밀턴</a></p>
+                                    <p class="dpos">1st</p>
+                                    <p class="dpoint">195PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottas driver">
+                            <img src="images/driver/bottas.png" alt="발테리 보타스">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/finland.png" alt="핀란드">
+                                    <img src="images/driver/num/bottas.png" alt="77">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">발테리 보타스</a></p>
+                                    <p class="dpos">4th</p>
+                                    <p class="dpoint">108PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perez driver">
+                            <img src="images/driver/perez.png" alt="세르지오 페레즈">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/mexico.png" alt="멕시코">
+                                    <img src="images/driver/num/perez.png" alt="11">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">세르지오 페레즈</a></p>
+                                    <p class="dpos">5th</p>
+                                    <p class="dpoint">104PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="verstappen driver">
+                            <img src="images/driver/verstappen.png" alt="맥스 베르스타펜">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/netherlands.png" alt="네덜란드">
+                                    <img src="images/driver/num/verstappen.png" alt="33">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">맥스 베르스타펜</a></p>
+                                    <p class="dpos">2nd</p>
+                                    <p class="dpoint">187PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latifi driver">
+                            <img src="images/driver/latifi.png" alt="니콜라스 라티피">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/canada.png" alt="캐나다">
+                                    <img src="images/driver/num/latifi.png" alt="6">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">니콜라스 라티피</a></p>
+                                    <p class="dpos">15th</p>
+                                    <p class="dpoint">6PTS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="russell driver">
+                            <img src="images/driver/russell.png" alt="조지 러셀">
+
+                            <div class="drivertxt">
+                                <div class="dimg">
+                                    <img src="images/driver/flag/british.png" alt="영국">
+                                    <img src="images/driver/num/russell.png" alt="63">
+                                </div>
+                                <div class="dtxt">
+                                    <p class="drivername"><a href="#">조지 러셀</a></p>
+                                    <p class="dpos">16th</p>
+                                    <p class="dpoint">4PTS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="sec3 sec">
+            <div class="postop">
+                <h2>순위</h2>
+                <p class="posteam">팀</p>
+                <p class="pospoint">포인트</p>
+            </div>
+
+            <!--sample-->
+            <div class="pos pos1">
+                <div class="whiteback"></div>
+                <h2>1</h2>
+                <div class="bar">
+                    <!--position:relative-->
+                    <a href="#">
+                        <!--backgound-image-->
+                        <span class="progress"></span>
+                        <!--bar 색상/position:absolute-->
+                        <p class="tname">레드불 레이싱</p>
+                        <p class="tpt">286PTS</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pos pos2">
+                <div class="whiteback"></div>
+                <h2>2</h2>
+                <div class="bar">
+                    <a href="#">
+                        <span class="progress"></span>
+                        <p class="tname">메르세데스</p>
+                        <p class="tpt">242PTS</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pos pos3">
+                <div class="whiteback"></div>
+                <h2>3</h2>
+                <div class="bar">
+                    <a href="#">
+                        <span class="progress"></span>
+                        <p class="tname">멕라렌 메르세데스</p>
+                        <p class="tpt">141PTS</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pos pos4">
+                <div class="whiteback"></div>
+                <h2>4</h2>
+                <div class="bar">
+                    <a href="#">
+                        <span class="progress"></span>
+                        <p class="tname">페라리</p>
+                        <p class="tpt">122PTS</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pos pos5">
+                <div class="whiteback"></div>
+                <h2>5</h2>
+                <div class="bar">
+                    <a href="#">
+                        <span class="progress"></span>
+                        <p class="tname">알파타우리 혼다</p>
+                        <p class="tpt">48PTS</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="sec4 sec">
+            <div class="tracktop">
+                <h2>트랙 / 스케줄</h2>
+                <p>트랙과 스케줄 정보를 알아보세요</p>
+                <div class="bt1">
+                    <a href="#">More</a>
+                </div>
+                <!--a태그 사용하세요-->
+            </div>
+
+            <div class="schedule">
+                <div class="country-wrap">
+                    <div class="country bahrain">
+                        <img class="flag" src="images/track/flag/Bahrain.png" alt="바레인 국기">
+                        <div class="exposure">
+                            <p class="country-name">바레인</p>
+                            <p class="date">28</p>
+                            <p class="month">3월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">바레인</p>
+                            <a class="gpname" href="#">FORMULA 1<br>GULF AIR BAHRAIN<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 03 26 - 2021 03 29</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>57Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>308.238km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.412km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:31.447</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--배경이미지로 넣어보세요~-->
+                        <!--<div><img src="images/track/trackimg/bahrain.png" alt="바레인 트랙 이미지"></div>-->
+                    </div>
+
+
+                    <div class="country italy">
+                        <img class="flag" src="images/track/flag/italy.png" alt="이탈리아 국기">
+                        <div class="exposure">
+                            <p class="country-name">이탈리아</p>
+                            <p class="date">18</p>
+                            <p class="month">4월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">이탈리아</p>
+                            <a href="#" class="gpname italygp">FORMULA 1<br>PIRELLI GRAND PREMIO DEL MADE IN ITALY E DELL'EMILIA ROMAGNA 2021</a>
+                            <p class="hdate">2021 04 16 - 2021 04 18</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>63Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>309.049km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.909km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:15.484</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country portugal">
+                        <img class="flag" src="images/track/flag/Portugal.png" alt="포르투갈 국기">
+                        <div class="exposure">
+                            <p class="country-name">포르투갈</p>
+                            <p class="date">02</p>
+                            <p class="month">5월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">포르투갈</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HEINEKEN GRANDE PREMIO<br>DE PORTUGAL 2021</a>
+                            <p class="hdate">2021 04 30 - 2021 05 02</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>66Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.826km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.653km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:18.750</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country spain">
+                        <img class="flag" src="images/track/flag/spain.png" alt="스페인 국기">
+                        <div class="exposure">
+                            <p class="country-name">스페인</p>
+                            <p class="date">09</p>
+                            <p class="month">5월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">스페인</p>
+                            <a href="#" class="gpname">FORMULA 1<br>ARAMCO GRAN PREMIO<br>DE ESPANA 2021</a>
+                            <p class="hdate">2021 05 07 - 2021 05 09</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>66Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>308.424km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.675km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:18.149</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country monaco">
+                        <img class="flag" src="images/track/flag/monaco.png" alt="모나코 국기">
+                        <div class="exposure">
+                            <p class="country-name">모나코</p>
+                            <p class="date">23</p>
+                            <p class="month">5월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">모나코</p>
+                            <a href="#" class="gpname">FORMULA 1<br>GRAND PRIX<br>DE MONACO 2021</a>
+                            <p class="hdate">2021 05 20 - 2021 05 23</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>78Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>260.286km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>3.337km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:12.909</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country azerbaijan active keep">
+                        <img class="flag" src="images/track/flag/azerbaijan.png" alt="아제르바이잔 국기">
+                        <div class="exposure">
+                            <p class="country-name">아제르바이잔</p>
+                            <p class="date">06</p>
+                            <p class="month">6월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">아제르바이잔</p>
+                            <a href="#" class="gpname">FORMULA 1<br>AZERBAIJAN<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 06 04 - 2021 06 06</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>51Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.049km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>6.003km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:43.009</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country france">
+                        <img class="flag" src="images/track/flag/france.png" alt="프랑스 국기">
+                        <div class="exposure">
+                            <p class="country-name">프랑스</p>
+                            <p class="date">20</p>
+                            <p class="month">6월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">프랑스</p>
+                            <a href="#" class="gpname">FORMULA 1<br>EMIRATES GRAND PRIX<br>DE FRANCE 2021</a>
+                            <p class="hdate">2021 06 18 - 2021 06 20</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>53Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>309.69km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.842km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:32.740</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country austria">
+                        <img class="flag" src="images/track/flag/austria.png" alt="오스트리아 국기">
+                        <div class="exposure">
+                            <p class="country-name">오스트리아</p>
+                            <p class="date">27</p>
+                            <p class="month">6월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">오스트리아</p>
+                            <a href="#" class="gpname">FORMULA 1<br>BWT GROSSER PREIS DERN<br>STEIERMARK 2021</a>
+                            <p class="hdate">2021 06 25 - 2021 06 27</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>71Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.452km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.318km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:05.619</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country austria">
+                        <img class="flag" src="images/track/flag/austria.png" alt="오스트리아 국기">
+                        <div class="exposure">
+                            <p class="country-name">오스트리아</p>
+                            <p class="date">04</p>
+                            <p class="month">7월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">오스트리아</p>
+                            <a href="#" class="gpname">FORMULA 1<br>BWT GROSSER PREIS VON<br>OSTERREICH 2021</a>
+                            <p class="hdate">2021 07 02 - 2021 07 04</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>71Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.452km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.318km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:05.619</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country brit">
+                        <img class="flag" src="images/track/flag/british.png" alt="영국 국기">
+                        <div class="exposure">
+                            <p class="country-name">영국</p>
+                            <p class="date">04</p>
+                            <p class="month">7월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">영국</p>
+                            <a href="#" class="gpname">FORMULA 1<br>PIRELLI BRITISH<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 07 04 - 2021 07 06</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>52Lap</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.197km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.891km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:27.097</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country hungary">
+                        <img class="flag" src="images/track/flag/hungary.png" alt="헝가리 국기">
+                        <div class="exposure">
+                            <p class="country-name">헝가리</p>
+                            <p class="date">01</p>
+                            <p class="month">8월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">헝가리</p>
+                            <a href="#" class="gpname">FORMULA 1<br>ROLEX MAGYAR<br>NAGYDIJ 2021</a>
+                            <p class="hdate">2021 07 30 - 2021 08 01</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>70Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.63km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.381km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:16.627</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country belgium">
+                        <img class="flag" src="images/track/flag/belgium.png" alt="벨기에 국기">
+                        <div class="exposure">
+                            <p class="country-name">벨기에</p>
+                            <p class="date">29</p>
+                            <p class="month">8월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">벨기에</p>
+                            <a href="#" class="gpname">FORMULA 1<br>ROLEX BELGIAN<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 08 27 - 2021 08 29</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>44Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>308.052km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>7.004km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:46.286</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country netherlands">
+                        <img class="flag" src="images/track/flag/netherlands.png" alt="네덜란드 국기">
+                        <div class="exposure">
+                            <p class="country-name">네덜란드</p>
+                            <p class="date">05</p>
+                            <p class="month">9월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">네덜란드</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HEINEKEN DUTCH<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 09 03 - 2021 09 05</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>72Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.648km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.259km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>NULL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country italy2">
+                        <img class="flag" src="images/track/flag/italy.png" alt="이탈리아 국기">
+                        <div class="exposure">
+                            <p class="country-name">이탈리아</p>
+                            <p class="date">12</p>
+                            <p class="month">9월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">이탈리아</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HEINEKEN<br>GRAND PREMIO D’ITALIA 2021</a>
+                            <p class="hdate">2021 09 10 - 2021 09 12</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>53Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>306.72km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.793km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:21.046</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country russia">
+                        <img class="flag" src="images/track/flag/russia.png" alt="러시아 국기">
+                        <div class="exposure">
+                            <p class="country-name">러시아</p>
+                            <p class="date">26</p>
+                            <p class="month">9월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">러시아</p>
+                            <a href="#" class="gpname">FORMULA 1<br>VTB RUSSIAN<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 09 24 - 2021 09 26</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>53Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>309.745km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.848km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:35.761</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country turkey">
+                        <img class="flag" src="images/track/flag/turkey.png" alt="터키 국기">
+                        <div class="exposure">
+                            <p class="country-name">터키</p>
+                            <p class="date">03</p>
+                            <p class="month">10월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">터키</p>
+                            <a href="#" class="gpname">FORMULA 1<br>TURKISH<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 10 01 - 2021 10 03</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>58Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>309.396km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.338km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:24.770</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country japan">
+                        <img class="flag" src="images/track/flag/japan.png" alt="일본 국기">
+                        <div class="exposure">
+                            <p class="country-name">일본</p>
+                            <p class="date">10</p>
+                            <p class="month">10월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">일본</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HONDA JAPANESE<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 10 08 - 2021 10 10</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>53Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>307.471km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.807km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:30.983</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country usa">
+                        <img class="flag" src="images/track/flag/usa.png" alt="미국 국기">
+                        <div class="exposure">
+                            <p class="country-name">미국</p>
+                            <p class="date">24</p>
+                            <p class="month">10월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">미국</p>
+                            <a href="#" class="gpname">FORMULA 1<br>ARAMCO UNITED STATES<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 10 23 - 2021 10 25</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>56Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>308.405km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.513km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:36.169</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country mexico">
+                        <img class="flag" src="images/track/flag/mexico.png" alt="멕시코 국기">
+                        <div class="exposure">
+                            <p class="country-name">멕시코</p>
+                            <p class="date">31</p>
+                            <p class="month">10월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">멕시코</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HONDA JAPANESE<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 10 30 - 2021 11 01</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>71Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>305.354km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.304km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:18.741</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country brazil">
+                        <img class="flag" src="images/track/flag/brazil.png" alt="브라질 국기">
+                        <div class="exposure">
+                            <p class="country-name">브라질</p>
+                            <p class="date">07</p>
+                            <p class="month">11월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">브라질</p>
+                            <a href="#" class="gpname">FORMULA 1<br>HEINEKEN GRAND PREMIO<br>DE SAO PAULO 2021</a>
+                            <p class="hdate">2021 11 05 - 2021 11 08</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>71Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>305.909km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>4.309km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:10.540</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country saudi">
+                        <img class="flag" src="images/track/flag/saudi.png" alt="사우디아라비아 국기">
+                        <div class="exposure">
+                            <p class="country-name">사우디아라비아</p>
+                            <p class="date">05</p>
+                            <p class="month">12월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">사우디아라비아</p>
+                            <a href="#" class="gpname">FORMULA 1<br>SAUDI ARABIAN<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 12 03 - 2021 12 06</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>50Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>308.75km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>6.175km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:10.540</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="country arab">
+                        <img class="flag" src="images/track/flag/arab.png" alt="아부다비 국기">
+                        <div class="exposure">
+                            <p class="country-name">아부다비</p>
+                            <p class="date">12</p>
+                            <p class="month">12월</p>
+                        </div>
+
+                        <div class="hidden">
+                            <p class="cname">아부다비</p>
+                            <a href="#" class="gpname">FORMULA 1<br>ETIHAD AIRWAYS ABUDHABI<br>GRAND PRIX 2021</a>
+                            <p class="hdate">2021 12 10 - 2021 12 12</p>
+
+                            <div class="hbottom">
+                                <div class="laps">
+                                    <p>랩수</p>
+                                    <p>55Laps</p>
+                                </div>
+
+                                <div class="distance">
+                                    <p>레이스 거리</p>
+                                    <p>305.355km</p>
+                                </div>
+
+                                <div class="lenth">
+                                    <p>서킷 길이</p>
+                                    <p>5.554km</p>
+                                </div>
+
+                                <div class="best">
+                                    <p>최고기록</p>
+                                    <p>1:39.283</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="sec5 sec">
+            <div class="info">
+                <h2>정보</h2>
+                <p>다양한 정보를 알아보세요</p>
+            </div>
+
+            <!--span태그 사용-->
+            <span class="line"></span>
+
+            <div class="boxwrap clearfix">
+                <div class="box news">
+                    <a href="#">
+                        <img src="images/info/news.png" alt="">
+                        <h4>소식</h4>
+                        <p>F1의 새로운 소식을<br>확인해 보세요</p>
+                    </a>
+                </div>
+
+                <div class="box term">
+                    <a href="#">
+                        <img src="images/info/term.png" alt="">
+                        <h4>용어</h4>
+                        <p>F1의 다양한 용어를<br>알아보세요</p>
+                    </a>
+                </div>
+
+                <div class="box rules">
+                    <a href="#">
+                        <img src="images/info/rules.png" alt="">
+                        <h4>규정</h4>
+                        <p>F1레이싱의 규정을<br>알아보세요</p>
+                        <div class="box-line"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="sec6 sec">
+            <h2>#F1</h2>
+            <div class="sns">
+                <p class="instagram act">instagram</p>
+                <p class="face">facebook</p>
+                <p class="twit">twitter</p>
+            </div>
+
+            <div class="insta">
+                <div class="largeimg">
+                    <a href="https://www.instagram.com/p/CP86FfiIvc_/">
+                        <img src="images/sns/insta/insta_1.png" alt="">
+                    </a>
+                </div>
+
+                <div class="smallimg1">
+                    <a href="https://www.instagram.com/p/CP6GqJTIpod/">
+                        <img src="images/sns/insta/insta_2.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/p/CP8DqNAIY75/">
+                        <img src="images/sns/insta/insta_3.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/p/CP58EEaoXAo/">
+                        <img src="images/sns/insta/insta_4.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/p/CP7246lo_nf/">
+                        <img src="images/sns/insta/insta_5.png" alt="">
+                    </a>
+                </div>
+
+                <div class="largeimg">
+                    <a href="https://www.instagram.com/p/CP6ON8qI3wd/">
+                        <img src="images/sns/insta/insta_6.png" alt="">
+                    </a>
+                </div>
+
+                <div class="smallimg2">
+                    <a href="https://www.instagram.com/p/CP8SFW4oQRd/">
+                        <img src="images/sns/insta/insta_7.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/p/CP8rOl3oRiz/">
+                        <img src="images/sns/insta/insta_8.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="facebook">
+                <a class="facebox" href="https://ko-kr.facebook.com/Formula1/photos/a.570461836444136/2192844547539182/?type=3&theater">
+                    <img src="images/sns/facebook/facebox.png" alt="">
+                </a>
+
+                <div class="txt">
+                    <div class="profile">
+                        <a href="https://ko-kr.facebook.com/Formula1/">
+                            <img src="images/sns/facebook/profile.png" alt="">
+                            <p>F1</p>
+                        </a>
+                    </div>
+                    <p class="facecont">The scores and stats from the <a href="https://www.facebook.com/MercedesAMGF1/?fref=mentions&__tn__=K-R">Mercedes-AMG Petronas Formula One Team</a> guys at the halfway point of the 2021 season</p>
+                </div>
+            </div>
+
+
+            <div class="twitter">
+                <div class="twitbox">
+                    <a class="twitboximg" href="https://twitter.com/F1/status/1424413344291753985"><img src="images/sns/twitter/twitbox1.png" alt=""></a>
+
+                    <div class="txt">
+                        <p>Lewis and Valtteri by numbers as we reach the halfway point of the 2021 season</p>
+
+                        <div class="hash">
+                            <a href="https://twitter.com/hashtag/F1?src=hashtag_click">#F1</a>
+                            <a href="https://twitter.com/MercedesAMGF1">@MercedesAMGF1</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="twitbox">
+                    <a class="twitboximg" href="https://twitter.com/F1/status/1424378694206988292"><img src="images/sns/twitter/twitbox2.png" alt=""></a>
+
+                    <div class="txt">
+                        <p>Check out five drivers whose first F1 wins came in Hungary - and there are three world champions in here And all of them took their maiden wins in thrilling fashion at the Hungaroring</p>
+
+                        <div class="hash">
+                            <a href="https://twitter.com/hashtag/HungarianGP?src=hashtag_click">#HungarianGP</a><a href="https://twitter.com/hashtag/F1?src=hashtag_click">#F1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="sec">
+            <p class="spon-title"><img src="images/footer/logo_f1_red.png" alt="F1">협력사</p>
+
+            <div class="sponsor">
+                <div class="spon1 clearfix">
+                    <a href="https://www.rolex.com/ko" target="_blank"><img src="images/footer/rolex.png" alt="롤렉스"></a>
+                    <a href="https://inmotion.dhl/en/formula-1/?utm_content=DHL-F1&utm_source=f1&utm_medium=website&utm_campaign=DHL-F1"><img src="images/footer/dhl.png" alt="DHL"></a>
+                    <a href="https://www.aramco.com/"><img src="images/footer/aramco.png" alt="aramco"></a>
+                    <a href="https://www.pirelli.com/tyres/en-ww/motorsport/f1/tyres?utm_source=formula1.com&utm_medium=referral&utm_campaign=ww_motorsport_f1&utm_content=homepage"><img src="images/footer/pirelli.png" alt="피렐리"></a>
+                    <a href="https://www.emirates.com/kr/korean/"><img src="images/footer/emirates.png" alt="Emirates"></a>
+                    <a href="https://www.heineken.com/kr/ko/agegateway?returnurl=%2f"><img src="images/footer/heineken.png" alt="하이네켄"></a>
+                    <a href="https://crypto.com/"><img src="images/footer/crypto.png" alt="크립토"></a>
+                </div>
+
+                <div class="spon2 clearfix">
+                    <a href="https://www.drivecoffee.com/"><img src="images/footer/drive.png" alt="Drive coffee"></a>
+                    <a href="https://aws.amazon.com/ko/"><img src="images/footer/aws.png" alt="AWS"></a>
+                    <a href="https://www.liqui-moly.com/en/us/"><img src="images/footer/liquimoly.png" alt="LIQUI MOLY"></a>
+                    <a href="https://www.expo2020dubai.com/"><img src="images/footer/expo.png" alt="Expo"></a>
+                    <a href="https://www.ferraritrento.com/en/"><img src="images/footer/cat.png" alt="Ferrari"></a>
+                    <a href="https://www.188x188x188x188.com/ko-kr"><img src="images/footer/188.png" alt="188bet"></a>
+                    <a href="https://zoom.us/"><img src="images/footer/zoom.png" alt="Zoom"></a>
+                    <a href="https://www.herjavecgroup.com/"><img src="images/footer/herjavec.png" alt="Herjavec"></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom clearfix">
+                <div class="footer-logo"><img src="images/footer/logo_f1.png" alt="F1"></div>
+
+                <div class="copyright">
+                    <p><a href="https://www.formula1.com">https://www.formula1.com</a></p>
+                    <p>&copy;2003-2021 Formula One World Championship Limited</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>
